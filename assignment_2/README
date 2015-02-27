@@ -1,0 +1,8 @@
+TO COMPILE RUN:
+gcc 3.c
+
+TO RUN:
+./a.out  -t <topology-file-name> -i <routing-update-interval>
+
+REPORT:
+This Project is implemented using C.  The routing table found on line number 8 is a structure containing the information needed for a routing table.  That is node addresses, and ports, number of servers and neigbors, ids, link costs, and least cost paths.  Messages are send in a uint16_t * array which is created by the function create_msg found on line 208.  Different indexes within that message are used to distinguish between different elements within the message.  The message keeps the predefined format and size seen in the project description.  The way the server funtions as a whole is that it initially constructs an routing table with the function make_rtable.  It then sets up the server structures and select.  Select is then used to multiplex between command line and server funtions, as well as to send interval updates upon a given time interval.  

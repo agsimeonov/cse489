@@ -1,0 +1,18 @@
+To compile my implementation of assignment 1 simply type the following (make sure a1.c is in the current directory):
+gcc a1.c
+
+To execute use the following command where # is the port # the application will run on:
+./a.out #
+
+For application options you have the following:
+Avaliable options:
+HELP                   - Lists available options
+EXIT                    - Exits the process
+MYIP                   - Displays the IP address of this process
+MYPORT                - Displays the port of this process
+CONNECT hostname port       - Connects to hostname @ port
+LIST                    - Displays current connections and their # (1-5)
+TERMINATE #            - Terminates connection associated with # (1-5)
+UPLOAD # file            - Uploads file to # (1-5)
+DOWNLOAD # file...        - Downloads a file from each # (1-5)
+CREATOR               - Displays creator name and email
